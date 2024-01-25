@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+nav ul{
+    display: flex;
+    column-gap: 15px;
+    list-style-type: none;
+}
+
+img[alt="menu"]{
+    display: none;
+}
+
+/* ul div media query */
+
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    img[alt="menu"]{
+        display: none;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    img[alt="menu"]{
+        display: none;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .ul-div{
+        display: none;
+    }
+    img[alt="menu"]{
+        display: block;
+    }
+
+}
+@media  screen and (max-width: 600px){
+    .ul-div{
+        display: none;
+    }
+    img[alt="menu"]{
+        display: block;
+    }
+}
+
+.background-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.background-content h1 {
+    font-weight: 700;
+}
+
+button[name="join-btn"]{
+    padding:20px;
+    margin: 10px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #f46632;
+    color:white;
+    font-size: 15px;
+}
+
+img[alt="background-person"]{
+    width:252px;
+}
+
+.sponsors{
+    padding: 40px;
+}
+#sponsor-title{
+    text-align: left;
+    font-weight: 500;
+}
+.sponsors-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+/* mode media query , dark or white */
+
+
+/* background content media query */
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .background-content{
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .background-content{
+        padding: 14px;
+        flex-wrap: wrap;
+    }
+    
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .background-content{
+        flex-wrap: wrap;
+    }
+    .sponsors-div{
+        justify-content: center;
+    }
+    #sponsor-title{
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 600px){
+    .background-content{
+        flex-wrap: wrap;
+    }
+}
+
+.start{
+    padding: 25px;
+    text-align: center;
+}
+.start > p{
+    padding-bottom: 20px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    color: white;
+    justify-content: center;
+}
+
+#card-text{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.card-content{
+    padding: 67px;
+    text-align: center;
+    width: 22%;
+    margin-top: 15px;
+    background-color: rgb(115, 177, 178);
+    border-style: none;
+    border-radius: 20px;
+}
+
+.card-content > h3{
+    padding-bottom: 15px;
+}
+
+.offer p {
+    width: 96%;
+}
+
+/* Cards media query */
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    #card-text > p{
+        width: 87%;
+    }
+    .card-content{
+        width: 43%;
+    }
+    .offer-img-div{
+        margin: auto;
+    }
+    .offer p {
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    #card-text > p{
+        width: 90%;
+    }
+    .card-content{
+        width:48%;
+    }
+
+    .offer-img-div{
+        margin: auto;
+    }
+    .offer p {
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    #card-text > p{
+        width: 98%;
+    }
+    .card-content{
+        width: 98%;
+    }
+    .offer-img-div{
+        margin: auto;
+    }
+    .offer p {
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    #card-text > p{
+        width: 100%;
+    }
+    .card-content{
+        width: 100%;
+    }
+    .offer p {
+        width: 100%;
+    }
+}
+
+.offer{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+img[alt="offer-img"]{
+    border-radius: 8px;
+}
+
+/* offer media query */
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    img[alt="offer-img"]{
+        width: 97%;
+       }
+       .offer{
+        flex-wrap: wrap;
+       }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    img[alt="offer-img"]{
+        width: 98%;
+       }
+       .offer{
+        flex-wrap: wrap;
+       }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    img[alt="offer-img"]{
+        width: 99%;
+       }
+       .offer{
+        flex-wrap: wrap;
+       }
+}
+@media  screen and (max-width: 600px){
+   img[alt="offer-img"]{
+    width: 100%;
+   }
+   .offer{
+    flex-wrap: wrap;
+   }
+}
+
+.training{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 25px;
+    padding-bottom: 80px;
+    text-align: center;
+    align-items: center;
+    column-gap: 36px;
+    row-gap: 15px;
+}
+
+img[alt="training"]{
+    border-radius: 8px;
+}
+
+/* training media query */
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .training{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    img[alt="training"]{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .training{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    img[alt="training"]{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .training{
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    img[alt="training"]{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .training{
+        flex-wrap: wrap;
+    }
+    img[alt="training"]{
+        width: 100%;
+    }
+}
+
+.membership{
+    padding: 15px;
+    text-align: center;
+}
+
+.membership h2{
+    padding-bottom: 15px;
+}
+
+.membership-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    text-align: center;
+}
+
+.card{
+    width: 50%;
+}
+.card>ul{
+    width: 100%;
+}
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .card{
+        width: 45%;
+
+    }
+    .card > p{
+        width: 91%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .card{
+        width: 50%;
+    }
+    .card > p{
+        width:88%;
+
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .card{
+        width: 100%;
+
+    }
+    .card > p{
+        width: 91%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .card{
+        width: 100%;
+    }
+    .card > p{
+        text-align: center;
+    }
+   
+}
