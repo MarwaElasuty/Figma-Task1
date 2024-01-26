@@ -25,6 +25,7 @@ img[alt="menu"]{
 /* ul div media query */
 
 
+
 @media  screen and (max-width: 1200px) and (min-width:992px) {
     img[alt="menu"]{
         display: none;
