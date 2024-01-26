@@ -9,6 +9,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 25px;
+    position: relative;
 }
 
 nav ul{
@@ -30,8 +31,28 @@ img[alt="menu"]{
     }
 }
 @media  screen and (max-width: 992px) and (min-width:786px) {
-    img[alt="menu"]{
+    .ul-div{
         display: none;
+    }
+    img[alt="menu"]{
+        display: block;
+    }
+    .ul-div{
+        position: absolute;
+        top: 68px;
+        right: 20px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    nav ul{
+       flex-direction: column;
+    }
+    ul li{
+        padding-bottom: 10px;
     }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
@@ -41,7 +62,23 @@ img[alt="menu"]{
     img[alt="menu"]{
         display: block;
     }
-
+    .ul-div{
+        position: absolute;
+        top: 68px;
+        right: 20px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    nav ul{
+       flex-direction: column;
+    }
+    ul li{
+        padding-bottom: 10px;
+    }
 }
 @media  screen and (max-width: 600px){
     .ul-div{
@@ -49,6 +86,23 @@ img[alt="menu"]{
     }
     img[alt="menu"]{
         display: block;
+    }
+    .ul-div{
+        position: absolute;
+        top: 68px;
+        right: 20px;
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    nav ul{
+       flex-direction: column;
+    }
+    ul li{
+        padding-bottom: 10px;
     }
 }
 
@@ -330,7 +384,8 @@ img[alt="training"]{
 }
 
 .membership h2{
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+    font-size: 30px;
 }
 
 .membership-cards{
@@ -341,45 +396,112 @@ img[alt="training"]{
 }
 
 .card{
-    width: 50%;
+    width: 42%;
+    background-color: rgb(133, 133, 133);
+    padding: 70px;
+    color: white;
 }
 .card>ul{
     width: 100%;
+    text-align: left;
+    padding-top: 20px;
 }
+
+.card > h2 {
+text-align: center;
+}
+
+.see-more-div{
+    padding-top: 30px;
+    display: flex;
+}
+
+.see-more-div > a{
+    font-size: 20px;
+    color: rgb(39, 76, 146);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+img[alt="right-arrow"]{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+img[alt="right-black-arrow"]{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+button[name="join-club"]{
+    padding: 10px;
+    background-color: rgb(39, 76, 146);
+    border-radius: 13px;
+    border-style: none;
+    color: white;
+    font-size: 16px;
+}
+
+
 
 @media  screen and (max-width: 1200px) and (min-width:992px) {
     .card{
         width: 45%;
+        padding:70px ;
 
     }
     .card > p{
         width: 91%;
     }
+    button[name="join-club"]{
+        font-size: 17px;
+    }
 }
 @media  screen and (max-width: 992px) and (min-width:786px) {
     .card{
-        width: 50%;
+        width: 44%;
+        padding: 75px;
     }
     .card > p{
         width:88%;
 
     }
+    button[name="join-club"]{
+        font-size: 17px;
+    }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .card{
         width: 100%;
+        padding: 75px;
 
     }
     .card > p{
         width: 91%;
     }
+    .membership-cards{
+        row-gap: 15px;
+    }
+    button[name="join-club"]{
+        font-size: 17px;
+    }
 }
 @media  screen and (max-width: 600px){
     .card{
+        padding: 60px;
+
         width: 100%;
     }
     .card > p{
         text-align: center;
     }
+
+    .membership-cards{
+        row-gap: 15px;
+    }
+
+    button[name="join-club"]{
+        font-size: 17px;
+    }
+    
    
 }
